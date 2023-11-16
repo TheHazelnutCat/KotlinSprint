@@ -7,8 +7,10 @@ fun main() {
     println(amountOrders)
     println(textPurchase)
 
-//    amountStaff = 2000u / Один из работников был уволен
+    amountStaff = 2000u
+//    println(amountStaff)
     amountStaff = 1999u
     println(amountStaff)
+
 
 }
