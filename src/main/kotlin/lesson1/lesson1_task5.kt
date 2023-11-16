@@ -1,11 +1,12 @@
 fun main() {
     val seconds = 6480 // Количество секунд, которые Гагарин провел в космосе.
-    val minutes = seconds / 60 // Количество минут
-    val hours = seconds / 60 / 60 // Количество часов
+    val numberConst = 60
+    val minutes = seconds / numberConst // Количество минут
+    val hours = seconds / numberConst / numberConst // Количество часов
 
-    val minutesOut = minutes - (hours * 60) // Получаем минуты с вычетом часов
-    val secondsOut = seconds - (minutesOut * 60) - (hours * 60 * 60) // Получаем секунды с вычетом часов и минут
-
+    // Получаем минуты и часы с вычетом времени, которое уже было отображено
+    val minutesOut = minutes - (hours * numberConst)
+    val secondsOut = seconds - (minutesOut * numberConst) - (hours * numberConst * numberConst)
 
 
     println("0$hours:$minutesOut:0$secondsOut")
