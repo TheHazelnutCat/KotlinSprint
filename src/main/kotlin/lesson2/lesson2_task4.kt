@@ -2,10 +2,10 @@ fun main() {
 
     val minedCrystal = 7
     val minedIron = 11
-    val Buff: Float = 20f / 100f
+    val buff = 20
 
-    val minedCrystalBuff: Int = (minedCrystal * Buff).toInt()
-    val minedIronBuff: Int = (minedIron * Buff).toInt()
+    val minedCrystalBuff: Int = (minedCrystal * buff / 100)
+    val minedIronBuff: Int = (minedIron * buff / 100)
 
     println("Количество бонусной кристалической руды: $minedCrystalBuff")
     println("Количество бонусной железной руды: $minedIronBuff")
