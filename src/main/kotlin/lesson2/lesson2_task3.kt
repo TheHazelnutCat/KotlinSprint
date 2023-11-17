@@ -1,18 +1,14 @@
-const val NUMBER_CONST = 60
+const val MIN_PER_HOUR_CONST = 60
 
 fun main() {
 
-    val timeOutHour = 9 // Время убытия
-    val timeOutMinutes = 39 // Время убытия
-    val timeWayMinutes = 457 // Минут займет путь
+    val departingHour = 9 // Часы убытия
+    val departingMinutes = 39 // Минуты убытия
+    val travelMinutes = 457 // Минут займет путь
 
-    val timeWayHours = timeWayMinutes / NUMBER_CONST
+    val arrivalMinutes = (departingMinutes + travelMinutes) % MIN_PER_HOUR_CONST // Минуты прибытия
+    val arrivalHours = departingHour + (departingMinutes + travelMinutes) / MIN_PER_HOUR_CONST // Часы прибытия
 
-    var timeInMinutes = timeWayMinutes + timeOutMinutes
-    val timeInHours = timeOutHour + (timeInMinutes / NUMBER_CONST)
-    timeInMinutes = (timeOutMinutes + timeWayMinutes) - ((timeInMinutes / NUMBER_CONST) * NUMBER_CONST)
-
-    println("$timeInHours:$timeInMinutes")
-
+    println("$arrivalHours:$arrivalMinutes")
 
 }
