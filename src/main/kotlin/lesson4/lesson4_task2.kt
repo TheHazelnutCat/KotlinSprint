@@ -1,7 +1,8 @@
+const val AVERAGE_WEIGHT_MAX = 100
+const val AVERAGE_WEIGHT_MIN = 35
+const val AVERAGE_VOLUME = 100
+
 fun main() {
-    val averageWeightMax = 100
-    val averageWeightMin = 35
-    val averageVolume = 100
 
     val loadFirstWeight = 42
     val loadFirstVolume = 120
@@ -11,8 +12,8 @@ fun main() {
 
     println(
         "Груз с весом $loadFirstWeight кг и объемом $loadFirstVolume л соответствует категории 'Average': " +
-                "${((loadFirstWeight >= averageWeightMin) && (loadFirstWeight <= averageWeightMax)) && (loadFirstVolume < averageVolume)}\n" +
+                "${((loadFirstWeight >= AVERAGE_WEIGHT_MIN) && (loadFirstWeight <= AVERAGE_WEIGHT_MAX)) && (loadFirstVolume < AVERAGE_VOLUME)}\n" +
                 "Груз с весом $loadSecondWeight кг и объемом $loadSecondVolume л соответствует категории 'Average': " +
-                "${((loadSecondWeight >= averageWeightMin) && (loadSecondWeight <= averageWeightMax)) && (loadSecondVolume < averageVolume)}"
+                "${((loadSecondWeight >= AVERAGE_WEIGHT_MIN) && (loadSecondWeight <= AVERAGE_WEIGHT_MAX)) && (loadSecondVolume < AVERAGE_VOLUME)}"
     )
 }
