@@ -10,14 +10,14 @@ fun main() {
     val inputUserLogin: String
     val inputUserPass: String
 
-    inputUserLogin = readLine()!!
+    inputUserLogin = readln()
 
     if (inputUserLogin != authUserLogin) {
         println("Вы не зарегистрированы, введите пароль для регистрации:")
-        inputUserPass = readLine()!!
+        inputUserPass = readln()
     } else {
         println("Введите пароль:")
-        inputUserPass = readLine()!!
+        inputUserPass = readln()
         if (inputUserPass != authUserPass) {
             println("Пароль неверный!")
         } else {
