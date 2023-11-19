@@ -5,7 +5,7 @@ fun main() {
     val rightAnswers = List(3) { Random.nextInt(0, 42) }
 
     println("Вам нужно угадать 3 числа от 0 до 42. Введите числа поочередно:")
-    val userAnswers = listOf(readLine()!!.toInt(), readLine()!!.toInt(), readLine()!!.toInt())
+    val userAnswers = listOf(readln().toInt(), readln().toInt(), readln().toInt())
 
     val intersectNumbers = rightAnswers.intersect(userAnswers).size
 
