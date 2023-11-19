@@ -1,10 +1,13 @@
 fun main() {
 
-    println("Напишите правильный ответ: 5 + 8 = ?")
+    val numberFirst = 5
+    val numberSecond = 8
+    val numberSum = numberFirst + numberSecond
+    println("Напишите правильный ответ: $numberFirst + $numberSecond = ?")
 
-    val userAnswer = readLine()!!.toInt()
+    val userAnswer = readln().toInt()
 
-    if (userAnswer == (5 + 8))
+    if (userAnswer == numberSum)
         println("Добро пожаловать!")
     else
         println("Доступ запрещен.")
