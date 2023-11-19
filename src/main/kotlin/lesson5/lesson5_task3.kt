@@ -4,8 +4,8 @@ fun main() {
 
     println("Вам нужно угадать два числа от 0 до 42. Введите числа по порядку:")
 
-    val userAnswerFirst = readLine()!!
-    val userAnswerSecond = readLine()!!
+    val userAnswerFirst = readln()
+    val userAnswerSecond = readln()
 
 
     if ((userAnswerFirst in rightAnswer) && (userAnswerSecond in rightAnswer))
