@@ -1,6 +1,4 @@
-import java.util.Scanner
-
-const val HAS_DAMAGE = true // Альт: false
+const val HAS_DAMAGE = false // Альт: true
 const val MIN_CREW_NUMBER = 55 //
 const val MAX_CREW_NUMBER = 70 // Альт: Только 70
 const val NUMBER_PROVISIONS = 50 // Альт: 51 и больше
@@ -8,11 +6,10 @@ const val IS_GOOD_WEATHER = true // Альт: true
 
 fun main() {
 
-    val readerInput = Scanner(System.`in`)
-    val hasNowDamage: Boolean = readerInput.nextBoolean()
-    val nowCrewNumber: Int = readerInput.nextInt()
-    val nowProvisionsNumber: Int = readerInput.nextInt()
-    val isNowGoodWeather: Boolean = readerInput.nextBoolean()
+    val hasNowDamage: Boolean = readln().toBoolean()
+    val nowCrewNumber: Int = readln().toInt()
+    val nowProvisionsNumber: Int = readln().toInt()
+    val isNowGoodWeather: Boolean = readln().toBoolean()
 
     println(
         "Возможность корабля отправиться в плавание: ${
